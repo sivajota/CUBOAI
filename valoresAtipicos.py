@@ -15,6 +15,6 @@ def atipicos(muestra):
 	for i in range(len(muestra)):
 		valorTipico = (muestra[i] - media)/ MATH.Deviation(muestra)
 		#podria usar tambien algo asi y en ese caso la funcion anterior no haria falta
-		#valor valorTipico = (muestra[i] - MATH.Media(muestra))/ MATH.Deviation(muestra)
+		#valor valorTipico = (muestra[i] - MATH.AVERAGE(muestra))/ MATH.Deviation(muestra)
 		if valorTipico > 3 or puntuacion < -3:
 			print(valorTipico)
